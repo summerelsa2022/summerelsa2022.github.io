@@ -1,0 +1,21 @@
+[class*=re] {
+    background: blue;
+    color: yellow;
+}
+.line1 {
+    background: rgb(0, 0, 255);
+    color: orange;
+    opacity: 0.75;
+}
+::selection {
+  color: white;
+  background: green;
+}
+p::first-line {
+     color: red;
+     font-size: x-large;
+}
+p::first-letter {
+     color: blue;
+     font-size: 200%;
+}
