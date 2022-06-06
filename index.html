@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+      <head>
+           <meta charset="utf-8">
+           <title>My CV</title>
+           <style>
+              body {
+                  font-size: 24px;
+                  padding: 24px;
+                  background-color: white;
+                  Color:black;
+              }
+              .dark {
+                   background-color: black;
+                   color:pink;
+              }
+          </style>
+          <link rel="stylesheet" href="ppstyle.css">
+      </head>
+    <body>   
+          <!--使用css的::selection反白特效-->
+          <div>
+              <button onclick="myFunction()">Change Mode</button>
+          </div>
+          <script>
+              function myFunction() {
+                  var element = document.body;
+                  element.classList.toggle("dark");
+              }
+          </script>
+           <div>
+             <h1 class="reward">"Elsa's CV"</h1><!--使用css[class*=re]特效-->
+           <div>        
+               <h2>Ａbout me</h2>
+                  <p>I'm a senior from <span style="color:blue">NCU</span>.<!--I major in English-->I like writing very much and aims to be a writer some day in the future. I have many hobbies as well, such as coding, painting, and swimming. I hope I can keep work life balance!</p>                 <hr>
+                  <!--以上p標籤內使用css的 p::first-line 及 p::first-letter 特效-->
+               <hr>
+               <h2 class="line1">Education</h2><!--使用css透明度特效-->
+                  <p><img src="http://military.ncu.edu.tw/images/homepage/ncu.png" width="30" height="20">English Department, National Central University</p>
+               <br>
+             <h2>Skills</h2>
+              <ul>
+                 <li>coding</li> 
+                 <li>team work</li>
+                 <li>photography</li>
+                 <li>illustration</li>
+              </ul>
+              <br>
+             <h2>Language</h2>
+              <ol>
+                 <li>Chinese</li> 
+                 <li>English</li>
+                 <li>Spanish</li>
+              </ol>
+            <h2>Contact</h2>
+            <table border="1">
+              <tr>
+                 <th>Phone number</th>
+                 <td>0912345678</td>
+              </tr>
+              <tr>
+                 <th>Email</th>
+                 <td>123.gmail.com</td>
+              </tr>
+           </table>
+           </div>
+           <script>
+                onload=showmsg();
+                function showmsg(){
+                    alert('Welcome');
+                }
+           </script>
+     </body>
+</html>
